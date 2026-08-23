@@ -1,0 +1,25 @@
+/* romance_probe landing — 공통 스타일. 셀 간 차이 금지(측정 순도) */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--paper:#faf7f2;--ink:#2b2620;--sub:#6b6257;--accent:#8a5d3b;--line:#e5ddd1}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;
+  line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:430px;margin:0 auto;padding:28px 22px 48px;display:flex;
+  flex-direction:column;align-items:center;text-align:center;gap:18px}
+.cover{width:min(78vw,300px);border-radius:6px;box-shadow:0 6px 24px rgba(43,38,32,.22)}
+h1{font-size:1.6rem;line-height:1.25;font-weight:700;letter-spacing:.01em}
+.byline{font-size:.95rem;color:var(--sub);letter-spacing:.12em;text-transform:uppercase}
+.promise{font-size:1.06rem;font-style:italic;color:var(--ink);max-width:38ch}
+.body{font-size:.98rem;color:var(--sub);max-width:40ch}
+.tag{font-size:.82rem;color:var(--accent);letter-spacing:.06em;text-transform:uppercase}
+form{width:100%;display:flex;flex-direction:column;gap:10px;margin-top:6px}
+input[type=email]{width:100%;padding:14px 16px;font-size:1rem;border:1px solid var(--line);
+  border-radius:8px;background:#fff;font-family:inherit}
+input[type=email]:focus{outline:2px solid var(--accent);border-color:var(--accent)}
+button{width:100%;padding:15px;font-size:1.05rem;font-weight:700;color:#fff;
+  background:var(--accent);border:none;border-radius:8px;cursor:pointer;font-family:inherit}
+button:active{transform:translateY(1px)}
+.promise-note{font-size:.88rem;color:var(--sub);max-width:36ch}
+.success{display:none;flex-direction:column;gap:12px;align-items:center;padding:22px 0}
+.success h2{font-size:1.25rem}
+footer{margin-top:22px;font-size:.75rem;color:#a39a8d;max-width:40ch}
+@media (min-width:700px){.wrap{max-width:480px;padding-top:48px}.cover{width:320px}}
